@@ -12,4 +12,9 @@ class Player {
 		name(blank: false)
 		aflTeam(blank: false)
     }
+	
+	String toString()
+	{
+		return name + ": " + aflTeam
+	}
 }
