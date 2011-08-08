@@ -19,9 +19,9 @@ class TeamController {
         def teamInstance = new Team()
         teamInstance.properties = params
 		
-		Player.list()*.delete()	
+		Player.list()*.delete()
 		
-		def http = new HTTPBuilder( 'http://localhost:9090' )
+		def http = new HTTPBuilder( 'http://jjjfc.bwob.com' )
 		
 		http.get(path : '/DTDataServer/rest/allPlayers/2011/1') { resp, json ->
          

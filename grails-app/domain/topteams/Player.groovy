@@ -6,7 +6,7 @@ class Player {
 	String aflTeam
 	boolean selected
 	
-	static hasMany = [scores:Score]
+	static hasMany = [results:Result]
 	
     static constraints = {
 		name(blank: false)
